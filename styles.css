@@ -1,0 +1,146 @@
+.logo {
+    width: 7vw;
+}
+
+body {
+    background-color: #BAE3FF;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url(skyline.webp);
+    background-size: cover;
+}
+
+.logo {
+    width: 12rem;
+    padding: 1.7rem;
+}
+
+nav {
+    background-color: #363B81;
+    border-radius: 20px;
+    padding: 0.1rem;
+    margin: 1rem 2rem;
+    border: 1px solid #565CB3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+a.active {
+    color: #BAE3FF;
+}
+
+ul li {
+    display: inline;
+    padding: 2rem;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+article.left {
+    background-color: #95CCF8;
+    padding: 1rem;
+    border-radius: 20px;
+    display: grid;
+    margin: 1rem 1rem 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    padding: 1rem;
+    font-size: 24px;
+    color: #26265A;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #363B81;
+    width: 95%;
+    margin: 0.4rem auto;
+}
+
+p {
+    padding: 1rem;
+    font-size: 18px;
+    color: #26265A;
+}
+
+article.right {
+    background-color: #95CCF8;
+    padding: 1rem;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 2rem 1rem 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+article.right>p,
+article.right>hr {
+    grid-column: 1 / -1;
+}
+
+.hotel,
+.restaurant {
+    display: grid;
+    width: 20vw;
+    padding: 1rem;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+footer {
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    background-color: #363B81;
+    border-radius: 20px;
+    padding: 1.3rem;
+    margin: 1rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border: 1px solid #565CB3;
+}
+
+form {
+    display: grid;
+    padding: 1rem;
+    gap: 5px;
+    font-size: 18px;
+}
+
+.firstName,
+.lastName {
+    width: 270px;
+}
+
+.totalGuests {
+    width: 120px;
+}
+
+.roomType {
+    width: 170px;
+}
+
+.other {
+    width: 320px
+}

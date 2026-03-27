@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Blue - Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+</head>
+
+<body>
+    <header>
+        <img src="logo-hotell.webp" alt="hotell logo" class="logo">
+        <nav>
+            <ul class="linktext">
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="book.html" class="active">Booking</a></li>
+                <li><a href="find.html">Find us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article class="left">
+                <div class="boka"></div>
+                <h2>Booking</h2>
+                <hr>
+                <form action="javascript:void(0)" method="post" class="booking-form">
+                    <label for="firstName">First name: </label>
+                    <input type="text" class="firstName" name="firstName" placeholder="Banksy" required>
+
+                    <label for="lastName">Surname: </label>
+                    <input type="text" class="lastName" name="lastName" placeholder="B" required>
+
+                    <label for="totalGuests">Number of guests: </label>
+                    <input type="number" class="totalGuests" name="totalGuests" min="1" max="10" required>
+
+                    <label for="roomType">Room type: </label>
+                    <select name="roomType" class="roomType" required>
+                        <option value="">Choose room</option>
+                        <option value="">Single</option>
+                        <option value="">Double</option>
+                        <option value="">Triple</option>
+                    </select>
+
+                    <label for="other">Additional requests: </label>
+                    <input type="text" class="other" name="other">
+                </form>
+            </article>
+            <article class="right">
+                <p>Lorem ipsum</p>
+            </article>
+        </section>
+    </main>
+    <footer>Hotel Blue | Storgatan 1 | 123 45 Storstad | 012 - 34 56</footer>
+</body>
+
+
+</html>
