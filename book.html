@@ -4,10 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Blue - Book">
     <title>Hotel Blue - Booking</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-css-reset/dist/reset.min.css" />
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -26,7 +27,6 @@
     <main>
         <section>
             <article class="left">
-                <div class="boka"></div>
                 <h2>Booking</h2>
                 <hr>
                 <form action="javascript:void(0)" method="post" class="booking-form">
@@ -42,9 +42,9 @@
                     <label for="roomType">Room type: </label>
                     <select name="roomType" class="roomType" required>
                         <option value="">Choose room</option>
-                        <option value="">Single</option>
-                        <option value="">Double</option>
-                        <option value="">Triple</option>
+                        <option value="single">Single</option>
+                        <option value="double">Double</option>
+                        <option value="triple">Triple</option>
                     </select>
 
                     <label for="other">Additional requests: </label>
@@ -52,11 +52,25 @@
                 </form>
             </article>
             <article class="right">
-                <p>Lorem ipsum</p>
+                <form action="javascript:void(0)" method="post" class="booking-form">
+                    <label for="ccNumber">CC number: </label>
+                    <input type="text" class="ccNumber" name="ccNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+
+                    <label for="expiry">Expiry date: </label>
+                    <input type="text" class="expiry" name="expiry" placeholder="MM-YY" required>
+
+                    <label for="CVC">CVC: </label>
+                    <input type="text" class="cvc" name="cvc" placeholder="XXX" required>
+                    <hr class="rightform">
+                    <p>Total: 100sek</p>
+                    <button id="bookBtn" type="button">Book</button>
+                    <p id="message"></p>
+                </form>
             </article>
         </section>
     </main>
     <footer>Hotel Blue | Storgatan 1 | 123 45 Storstad | 012 - 34 56</footer>
+
 </body>
 
 

@@ -1,7 +1,3 @@
-.logo {
-    width: 7vw;
-}
-
 body {
     background-color: #BAE3FF;
     font-family: Georgia, 'Times New Roman', Times, serif
@@ -12,14 +8,14 @@ header img {
     margin: 0 auto;
 }
 
-header {
+/* header { 
     background-image: url(skyline.webp);
     background-size: cover;
-}
+}*/
 
 .logo {
-    width: 12rem;
-    padding: 1.7rem;
+    width: 10rem;
+    padding: 1rem;
 }
 
 nav {
@@ -102,7 +98,7 @@ article.right>hr {
 
 .hotel,
 .restaurant {
-    display: grid;
+    display: block;
     width: 20vw;
     padding: 1rem;
     margin: 0 auto;
@@ -129,7 +125,8 @@ form {
 }
 
 .firstName,
-.lastName {
+.lastName,
+.ccNumber {
     width: 270px;
 }
 
@@ -143,4 +140,54 @@ form {
 
 .other {
     width: 320px
+}
+
+.expiry,
+.cvc {
+    width: 100px;
+}
+
+button {
+    width: 80px;
+    margin: 1rem;
+}
+
+hr.rightform {
+    width: 200%;
+}
+
+.maps {
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: 1fr;
+    }
+
+    article.left,
+    article.right {
+        margin: 1rem;
+    }
+
+    article.right {
+        grid-template-columns: 1fr;
+    }
+
+    ul li {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .hotel,
+    .restaurant {
+        width: 100%;
+    }
+
+    nav,
+    footer {
+        margin: 1rem;
+    }
 }
