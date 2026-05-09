@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hotel Blue - Contact">
     <title>Hotel Blue - Contact</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
@@ -26,14 +27,30 @@
     <main>
         <section>
             <article class="left">
-                <h2>Welcome</h2>
+                <h2>Contact</h2>
                 <hr>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere, obcaecati. Nam et nesciunt autem.
                     Deserunt adipisci saepe molestias sequi unde ratione architecto at impedit laudantium aperiam
                     aliquid velit, laborum tenetur.</p>
             </article>
             <article class="right">
-                <p>Lorem ipsum</p>
+                <form action="javascript:void(0)" method="post" class="contact-form">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@gmail.com" required>
+
+                    <label for="reason">Reason: </label>
+                    <select name="reason" id="reason" required>
+                        <option value="booking">Booking</option>
+                        <option value="payment">Payment</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <label for="description">Description: </label>
+                    <input type="text" id="description" name="description" placeholder="..." required>
+                    <button id="submitBtn" id="button">Submit</button>
+                </form>
             </article>
         </section>
     </main>

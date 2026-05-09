@@ -31,16 +31,16 @@
                 <hr>
                 <form action="javascript:void(0)" method="post" class="booking-form">
                     <label for="firstName">First name: </label>
-                    <input type="text" class="firstName" name="firstName" placeholder="Banksy" required>
+                    <input type="text" id="firstName" name="firstName" placeholder="John" required>
 
                     <label for="lastName">Surname: </label>
-                    <input type="text" class="lastName" name="lastName" placeholder="B" required>
+                    <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
 
                     <label for="totalGuests">Number of guests: </label>
-                    <input type="number" class="totalGuests" name="totalGuests" min="1" max="10" required>
+                    <input type="number" id="totalGuests" name="totalGuests" min="1" max="10" required>
 
                     <label for="roomType">Room type: </label>
-                    <select name="roomType" class="roomType" required>
+                    <select name="roomType" id="roomType" required>
                         <option value="">Choose room</option>
                         <option value="single">Single</option>
                         <option value="double">Double</option>
@@ -48,23 +48,22 @@
                     </select>
 
                     <label for="other">Additional requests: </label>
-                    <input type="text" class="other" name="other">
+                    <input type="text" id="other" name="other" placeholder="...">
                 </form>
             </article>
             <article class="right">
                 <form action="javascript:void(0)" method="post" class="booking-form">
                     <label for="ccNumber">CC number: </label>
-                    <input type="text" class="ccNumber" name="ccNumber" placeholder="XXXX XXXX XXXX XXXX" required>
+                    <input type="text" id="ccNumber" name="ccNumber" placeholder="XXXX XXXX XXXX XXXX" required>
 
                     <label for="expiry">Expiry date: </label>
-                    <input type="text" class="expiry" name="expiry" placeholder="MM-YY" required>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM-YY" required>
 
                     <label for="CVC">CVC: </label>
-                    <input type="text" class="cvc" name="cvc" placeholder="XXX" required>
+                    <input type="text" id="cvc" name="cvc" placeholder="XXX" required>
                     <hr class="rightform">
                     <p>Total: 100sek</p>
                     <button id="bookBtn" type="button">Book</button>
-                    <p id="message"></p>
                 </form>
             </article>
         </section>
