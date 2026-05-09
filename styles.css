@@ -31,10 +31,11 @@ a.active {
     color: #BAE3FF;
 }
 
-ul li {
-    display: inline;
-    padding: 2rem;
+ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
+    gap: 7rem;
 }
 
 a {
@@ -90,6 +91,7 @@ article.right {
     grid-template-columns: 1fr 1fr;
     margin: 1rem 2rem 1rem 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    align-content: start;
 }
 
 article.right>p,
@@ -189,10 +191,8 @@ hr.contactform {
         grid-template-columns: 1fr;
     }
 
-    ul li {
-        display: block;
-        padding: 1rem;
-        text-align: center;
+    ul {
+        gap: 2rem;
     }
 
     .hotel,
@@ -204,4 +204,9 @@ hr.contactform {
     footer {
         margin: 1rem;
     }
+
+    a {
+        font-size: 20px
+    }
+
 }
