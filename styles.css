@@ -35,7 +35,7 @@ ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 7rem;
+    gap: 4rem;
 }
 
 a {
@@ -99,13 +99,10 @@ article.right>hr {
     grid-column: 1 / -1;
 }
 
-.hotel,
-.restaurant {
-    display: block;
-    width: 20vw;
+img {
     padding: 1rem;
+    width: 30vw;
     margin: 0 auto;
-    border-radius: 25px;
 }
 
 footer {
@@ -178,6 +175,11 @@ hr.contactform {
 }
 
 @media (max-width: 768px) {
+    .logo {
+        width: 8rem;
+        height: auto;
+    }
+
     section {
         grid-template-columns: 1fr;
     }
@@ -192,7 +194,11 @@ hr.contactform {
     }
 
     ul {
-        gap: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
     }
 
     .hotel,
@@ -206,7 +212,6 @@ hr.contactform {
     }
 
     a {
-        font-size: 20px
+        font-size: 18px
     }
-
 }
