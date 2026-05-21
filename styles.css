@@ -8,10 +8,10 @@ header img {
     margin: 0 auto;
 }
 
-/* header { 
+header {
     background-image: url(skyline.webp);
     background-size: cover;
-}*/
+}
 
 .logo {
     width: 10rem;
@@ -124,9 +124,15 @@ form {
     font-size: 18px;
 }
 
+textarea {
+    overflow: hidden;
+    resize: none;
+}
+
 #firstName,
 #lastName,
 #ccNumber,
+#email,
 #name {
     width: 270px;
     height: 35px;
@@ -144,10 +150,8 @@ form {
 }
 
 #other,
-#email,
 #description {
-    width: 320px;
-    height: 35px;
+    width: 260px;
 }
 
 #expiry,
@@ -160,11 +164,6 @@ button {
     width: 80px;
     margin: 1rem;
     height: 35px;
-}
-
-hr.rightform,
-hr.contactform {
-    width: 200%;
 }
 
 .maps {
