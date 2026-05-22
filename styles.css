@@ -101,7 +101,7 @@ article.right>hr {
 
 img {
     padding: 1rem;
-    width: 30vw;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -134,7 +134,7 @@ textarea {
 #ccNumber,
 #email,
 #name {
-    width: 270px;
+    width: 300px;
     height: 35px;
 }
 
@@ -145,18 +145,18 @@ textarea {
 
 #roomType,
 #reason {
-    width: 170px;
+    width: 180px;
     height: 35px;
 }
 
 #other,
 #description {
-    width: 260px;
+    width: 320px;
 }
 
 #expiry,
 #cvc {
-    width: 100px;
+    width: 120px;
     height: 35px;
 }
 
@@ -200,8 +200,7 @@ button {
         padding: 0;
     }
 
-    .hotel,
-    .restaurant {
+    img {
         width: 100%;
     }
 
@@ -213,4 +212,36 @@ button {
     a {
         font-size: 18px
     }
+
+    #firstName,
+    #lastName,
+    #ccNumber,
+    #email,
+    #name {
+        width: 260px;
+        height: 35px;
+    }
+
+    #totalGuests {
+        width: 90px;
+        height: 35px;
+    }
+
+    #roomType,
+    #reason {
+        width: 160px;
+        height: 35px;
+    }
+
+    #other,
+    #description {
+        width: 260px;
+    }
+
+    #expiry,
+    #cvc {
+        width: 90px;
+        height: 35px;
+    }
+
 }
