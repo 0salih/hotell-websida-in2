@@ -63,6 +63,21 @@ article.left {
     align-content: start;
 }
 
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+}
+
+article.booking {
+    background-color: #95CCF8;
+    display: grid;
+    padding: 1rem;
+    border-radius: 20px;
+    margin: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
 h1 {
     padding: 1rem;
     font-size: 24px;
@@ -174,6 +189,15 @@ button {
 }
 
 @media (max-width: 768px) {
+
+    article.booking {
+        margin: 1rem;
+    }
+
+    .booking-form {
+        grid-template-columns: 1fr;
+    }
+
     .logo {
         width: 8rem;
         height: auto;
